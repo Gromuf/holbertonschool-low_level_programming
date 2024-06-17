@@ -1,10 +1,11 @@
 #include <stdio.h>
 /**
- *main - This is the entry point of the code
+ * main - Entry point
  *
- *Description: Prints "Programming is like building a multilingual puzzle"
+ * Description: Prints "Programming is like building a multilingual puzzle"
+ * to the standard output.
  *
- *Return - 0 Successful
+ * Return: 0 if successful, otherwise a non-zero value
  */
 int main(void)
 {
