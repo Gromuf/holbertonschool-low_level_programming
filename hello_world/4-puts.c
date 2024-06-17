@@ -2,7 +2,9 @@
 /**
  *main - This is the entry point of the code
  *
- *return - 0 Successful
+ *Description: Prints "Programming is like building a multilingual puzzle"
+ *
+ *Return - 0 Successful
  */
 int main(void)
 {
