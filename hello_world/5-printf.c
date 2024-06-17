@@ -3,9 +3,9 @@
  *main - Entry point
  *
  * Description: Prints "with proper grammar, but the outcome is a piece of art,"
- * 		followed by a newline to the standard output.
+ *		followed by a newline to the standard output.
  *
- * Return: Always 0 (Succes)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
