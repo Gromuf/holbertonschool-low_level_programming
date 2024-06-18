@@ -7,6 +7,6 @@
  * Description: This function prints the string "_putchar"
  * followed by a new line character to the standard output.
  */
-void _putchar(void);
+void x(void);
 
 #endif /* MAIN_H */
