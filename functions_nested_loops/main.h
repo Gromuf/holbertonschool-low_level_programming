@@ -23,4 +23,5 @@ static inline int _putchar(char c)
  */
 void x(void);
 
+void print_alphabet(void);
 #endif /* MAIN_H */
