@@ -17,6 +17,6 @@ void _putchar(void)
 
 int main(void)
 {
-	x();
+	_putchar();
 	return (0);
 }
