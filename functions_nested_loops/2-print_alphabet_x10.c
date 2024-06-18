@@ -6,6 +6,6 @@ void print_alphabet_10x(void)
 
 	for (i = 0 ; i < 10 ; i++)
 	{
-		print_alphabet()
+		print_alphabet();
 	}
 }
