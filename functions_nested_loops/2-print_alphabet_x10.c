@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Prints the alphabet 10 times, followed by a newline each time.
+ * print_alphabet_x10 - Prints the alphabet 10 times,
+ * followed by a newline each time.
  *
  * Description:
  * Uses nested loops to print each letter of the alphabet ('a' to 'z')
