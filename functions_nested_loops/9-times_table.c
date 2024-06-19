@@ -17,7 +17,7 @@ void times_table(void)
 			}
 			if (i * j == 0 && j > 0)
 			{
-				_puthar(' ');
+				_putchar(' ');
 			}
 			else if (i * j < 10 && i * j > 0)
 			{
