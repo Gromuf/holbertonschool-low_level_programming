@@ -3,7 +3,7 @@
 
 int print_sign(int i)
 {
-	if (i < 0)
+	if (i > 0)
 	{
 		write(1, "+", 1);
 		return (1);
