@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * times_table - Prints the 9 times table, starting with 0
+ *
+ * Description: This function prints the 9 times table, from 0x0 to 9x9.
+ * Each number is followed by a comma and space, except for the last number
+ * in each row. Each row ends with a newline character.
+ */
 void times_table(void)
 {
 	int i;
