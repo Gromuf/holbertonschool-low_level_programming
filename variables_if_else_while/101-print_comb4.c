@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ *
+ * Description: Prints all possible different combinations of three digits.
+ *
+ * Return: Always 0 (success)
+ */
 int main(void)
 {
 	int i;
