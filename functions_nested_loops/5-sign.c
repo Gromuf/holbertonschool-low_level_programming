@@ -5,17 +5,17 @@ int print_sign(int i)
 {
 	if (i < 0)
 	{
-		printf("+");
+		write(1, "+", 1);
 		return (1);
 	}
 	else if (i == 0)
 	{
-		printf("0");
+		write(1, "0", 1);
 		return (0);
 	}
 	else
 	{
-		printf("-");
+		write(1, "-", 1);
 		return (-1);
 	}
 }
