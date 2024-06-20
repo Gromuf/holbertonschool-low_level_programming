@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_times_table - prints the n times table, starting with 0
+ * @n: the highest number to include in the times table
+ *
+ * If n is greater than 15 or less than 0,
+ * the function should not print anything.
+ */
 void print_times_table(int n)
 {
 	int i;
