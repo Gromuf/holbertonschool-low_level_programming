@@ -3,10 +3,11 @@
 void print_times_table(int n)
 {
 	if (n > 15 || n < 0)
+	{
 		return;
+	}
 
-	int i;
-	int j;
+	int i, j;
 
 	for (i = 0 ; i <= n ; i++)
 	{
@@ -17,7 +18,6 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 			  }
-
 			  if (i * j < 10)
 			  {
 				if (j != 0)
