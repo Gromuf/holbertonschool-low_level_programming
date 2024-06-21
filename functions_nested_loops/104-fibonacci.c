@@ -5,7 +5,8 @@ int main(void)
 	unsigned long a1 = 1, a2 = 0;
 	unsigned long b1 = 2, b2 = 0;
 	unsigned long temp1, temp2;
-	unsigned long max = 1000000000;
+	unsigned long max = 1000000000UL;
+	unsigned long high, low;
 	int i;
 
 	printf("%lu, %lu", a1, b1);
@@ -16,8 +17,10 @@ int main(void)
 
 		if (temp2 >= max)
 		{
-			temp1 += temp2 / max;
-			temp2 = temp2 % max;
+			high = temp2 / max;
+			low = temp2 % max;
+			temp1 += high;
+			temp2 = low;
 		}
 		if (temp2 > 0)
 		{
