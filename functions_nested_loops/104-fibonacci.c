@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	long a = 1;
-	long b = 2;
-	long result;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long result;
 	int i;
 
 	printf("%lu, %lu", a, b);
