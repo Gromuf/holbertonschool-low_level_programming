@@ -19,11 +19,13 @@ int main(void)
 			temp1 += temp2 / max;
 			temp2 = temp2 % max;
 		}
-
-		printf(", %lu", temp1);
-		if (temp2 > 0 || i <  98)
+		if (temp2 > 0)
 		{
-			printf("%09lu", temp2);
+			printf("%lu%09lu", temp1, temp2);
+		}
+		else
+		{
+			printf(", %lu", temp1);
 		}
 		a1 = b1;
 		a2 = b2;
