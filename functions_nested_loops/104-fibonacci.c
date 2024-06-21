@@ -21,7 +21,7 @@ int main(void)
 		}
 		if (temp2 > 0)
 		{
-			printf("%lu%09lu", temp1, temp2);
+			printf(", %lu%09lu", temp1, temp2);
 		}
 		else
 		{
