@@ -21,7 +21,7 @@ int main(void)
 		}
 
 		printf(", %lu", temp1);
-		if (temp2 > 0)
+		if (temp2 > 0 || i <  98)
 		{
 			printf("%09lu", temp2);
 		}
