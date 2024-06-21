@@ -7,14 +7,14 @@ int main(void)
 	double result;
 	int i;
 
-	printf("%d, %d, ", a, b);
+	printf("%f, %f, ", a, b);
 	for (i = 0 ; i < 49 ; i++)
 	{
 		result = a + b;
-		printf("%d, ", result);
+		printf("%f, ", result);
 		a = b;
 		b = result;
 	}
-	printf("%d\n", a + b);
+	printf("%f\n", a + b);
 	return (0);
 }
