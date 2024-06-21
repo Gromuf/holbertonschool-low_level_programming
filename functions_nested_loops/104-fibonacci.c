@@ -1,40 +1,49 @@
 #include <stdio.h>
 
+/**
+ * main - print first 98 Fibonacci numbers without using long long, malloc,
+ * pointers, array/tables, or structures
+ * Return: 0
+ */
+
 int main(void)
 {
-	unsigned long a1 = 1, a2 = 0;
-	unsigned long b1 = 2, b2 = 0;
-	unsigned long temp1, temp2;
-	unsigned long max = 1000000000UL;
-	unsigned long high, low;
-	int i;
+    int counter, overflow;
+    unsigned long a1 = 1;
+    unsigned long a2 = 1;
+    unsigned long sum;
+    unsigned long a1_head, a1_tail, a2_head, a2_tail, sum_head, sum_tail;
 
-	printf("%lu, %lu", a1, b1);
-	for (i = 3 ; i <= 98 ; i++)
-	{
-		temp1 = a1 + b1;
-		temp2 = a2 + b2;
+    printf("1, 1");
 
-		if (temp2 >= max)
-		{
-			high = temp2 / max;
-			low = temp2 % max;
-			temp1 += high;
-			temp2 = low;
-		}
-		if (temp2 > 0)
-		{
-			printf(", %lu%09lu", temp1, temp2);
-		}
-		else
-		{
-			printf(", %lu", temp1);
-		}
-		a1 = b1;
-		a2 = b2;
-		b1 = temp1;
-		b2 = temp2;
-	}
-	printf("\n");
-	return (0);
+    for (counter = 3; counter < 93; counter++)
+    {
+        sum = a1 + a2;
+        a1 = a2;
+        a2 = sum;
+        printf(", %lu", sum);
+    }
+
+    a1_head = a1 / 1000000000; /* break larger num into 2 parts */
+    a1_tail = a1 % 1000000000;
+    a2_head = a2 / 1000000000;
+    a2_tail = a2 % 1000000000;
+
+    for (; counter < 99; counter++)
+    {
+        overflow = (a1_tail + a2_tail) / 1000000000;
+        sum_tail = (a1_tail + a2_tail) - (1000000000 * overflow);
+        sum_head = (a1_head + a2_head) + overflow;
+
+        printf(", %lu%09lu", sum_head, sum_tail);
+
+        a1_head = a2_head;
+        a1_tail = a2_tail;
+        a2_head = sum_head;
+        a2_tail = sum_tail;
+    }
+
+    printf("\n");
+
+    return (0);
 }
