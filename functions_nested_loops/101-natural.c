@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-void natural(void)
+int main(void)
 {
 	int result;
 	int i;
@@ -14,4 +14,5 @@ void natural(void)
 		}
 	}
 	printf("%d\n", result);
+	return (0);
 }
