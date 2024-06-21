@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+/**
+ * main - Prints the first 98 Fibonacci numbers in a specified format.
+ *
+ * Description:
+ * This program calculates and prints the first 98 Fibonacci numbers.
+ * It handles large numbers by breaking them into two parts when necessary.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	int counter, overflow;
@@ -10,7 +19,7 @@ int main(void)
 
 	printf("1");
 
-	for (counter = 2; counter < 93; counter++) /* will still print */
+	for (counter = 2; counter < 93; counter++)
 	{
 		sum = a + b;
 		a = b;
@@ -18,7 +27,7 @@ int main(void)
 		printf(", %lu", sum);
 	}
 
-	a_head = a / 1000000000; /* break larger num into 2 parts */
+	a_head = a / 1000000000;
 	a_tail = a % 1000000000;
 	b_head = b / 1000000000;
 	b_tail = b % 1000000000;
