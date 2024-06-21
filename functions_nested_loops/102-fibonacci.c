@@ -8,7 +8,7 @@ int main(void)
 	int i;
 
 	printf("%ld, %ld, ", a, b);
-	for (i = 333 i <= 50 ; i++)
+	for (i = 3 ; i <= 50 ; i++)
 	{
 		result = a + b;
 		printf("%ld, ", result);
