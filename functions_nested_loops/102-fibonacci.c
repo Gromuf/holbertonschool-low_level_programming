@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int result;
+	double a = 1;
+	double b = 2;
+	double result;
 	int i;
 
 	printf("%d, %d, ", a, b);
