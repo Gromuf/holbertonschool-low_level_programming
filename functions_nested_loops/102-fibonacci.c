@@ -2,19 +2,19 @@
 
 int main(void)
 {
-	double a = 1;
-	double b = 2;
-	double result;
+	long a = 1;
+	long b = 2;
+	long result;
 	int i;
 
-	printf("%f, %f, ", a, b);
+	printf("%ld, %ld, ", a, b);
 	for (i = 0 ; i < 49 ; i++)
 	{
 		result = a + b;
-		printf("%f, ", result);
+		printf("%ld, ", result);
 		a = b;
 		b = result;
 	}
-	printf("%f\n", a + b);
+	printf("%ld\n", a + b);
 	return (0);
 }
