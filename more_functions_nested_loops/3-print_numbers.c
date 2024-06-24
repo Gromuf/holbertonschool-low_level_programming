@@ -1,6 +1,6 @@
 #include "main.h"
 
-void print_numbers(voi)
+void print_numbers(void)
 {
 	int i;
 
