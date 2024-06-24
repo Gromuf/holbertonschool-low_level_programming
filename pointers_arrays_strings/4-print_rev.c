@@ -1,10 +1,14 @@
 #include "main.h"
-#include "2-strlen.c"
 
 void print_rev(char *s)
 {
-	int length = _strlen(*s);
+	int length = 0;
 	int i;
+
+	while (s[length] != '\n')
+	{
+		length++;
+	}
 
 	for (i = length ; i >= 0 ; i--)
 	{
