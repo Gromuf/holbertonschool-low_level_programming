@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+* puts_half - Prints the second half of a string.
+* @str: Pointer to the null-terminated string to be printed.
+*
+* Description:
+* This function prints the second half of the string pointed to by @str,
+* followed by a newline character '\n'.
+*/
 void puts_half(char *str)
 {
 	int length = 0;
