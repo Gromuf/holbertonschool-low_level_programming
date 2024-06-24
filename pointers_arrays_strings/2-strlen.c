@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
-* _strlen - Calculates the length of a null-terminated string.
-* @str: Pointer to the null-terminated string.
+* _strlen - Calculates the length of a string.
+* @s: Pointer to the string.
 *
 * Description:
-* This function calculates and returns
-* the length of the string pointed to by @str,
+* This function calculates and returns the length of the string pointed to by @s,
 * excluding the null terminator '\0'.
 *
-* Return: The length of the string pointed to by @str.
+* Return: The length of the string pointed to by @s.
 */
 int _strlen(char *s)
 {
