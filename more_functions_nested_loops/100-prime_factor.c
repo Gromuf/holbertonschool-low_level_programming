@@ -31,6 +31,6 @@ int main(void)
 	}
 	if (num > 4)
 		res = num;
-	printf("%ld\n", num);
+	printf("%ld\n", res);
 	return (0);
 }
