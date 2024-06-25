@@ -14,7 +14,7 @@ int main(void)
 	while (num % 3 == 0)
 	{
 		res = 3;
-		num = n / 3;
+		num = num / 3;
 	}
 	for (i = 5 ; i * i <= num ; i += 6)
 	{
@@ -31,6 +31,6 @@ int main(void)
 	}
 	if (num > 4)
 		res = num;
-	printf("%d\n", num);
+	printf("%ld\n", num);
 	return (0);
 }
