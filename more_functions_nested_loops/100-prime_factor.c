@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	long long int num = 612852475143;
-	int res = -1;
-	int i;
+	long num = 612852475143;
+	long res = -1;
+	long i;
 
 	while (num % 2 == 0)
 	{
@@ -21,12 +21,12 @@ int main(void)
 		while (num % i == 0)
 		{
 			res = i;
-			n = n / i;
+			num = num / i;
 		}
-		while (n % (i + 2) == 0)
+		while (num % (i + 2) == 0)
 		{
 			res = i + 2;
-			n = n / (i + 2);
+			num = num / (i + 2);
 		}
 	}
 	if (num > 4)
