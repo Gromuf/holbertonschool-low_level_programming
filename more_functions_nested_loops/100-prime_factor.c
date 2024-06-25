@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+* main - Entry point
+*
+* Description: This program finds and prints the largest prime factor
+* of the number 612852475143.
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
 	long num = 612852475143;
