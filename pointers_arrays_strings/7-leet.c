@@ -18,8 +18,8 @@ char *leet(char *str)
 
 	while (*x != '\0')
 	{
-		if (map[*x] != 0)
-			*x = map[*x];
+		if (map[(unsigned char)*x] != 0)
+			*x = map[(unsigned char)*x];
 		x++;
 	}
 	return (str);
