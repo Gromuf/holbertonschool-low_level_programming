@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	int num = 612852475143;
+	long long int num = 612852475143;
 	int res = -1;
 	int i;
 
