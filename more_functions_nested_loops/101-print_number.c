@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+* print_number - Prints an integer.
+* @n: The integer to print.
+*
+* Description: This function prints an integer using only the _putchar
+* function. It handles negative numbers by printing a '-' sign and then
+* recursively prints each digit of the number.
+*/
 void print_number(int n)
 {
 	unsigned int res = n;
