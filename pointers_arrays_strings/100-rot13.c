@@ -8,8 +8,20 @@ char *rot13(char *str)
 	{
 		if (('a' <= *x && *x <= 'z') || ('A' <= *x && *x <= 'Z'))
 		{
-			char base = ('a' <= *x && *x <= 'z') ? 'a' : 'A';
-			*x = (*x - base + 13) % 26 + base;
+			int is_lower = 'a' <= *x && *x <= 'z';
+			int is_upper = 'A' <= *x && *x <= 'Z';
+
+			while (is_lower)
+			{
+				*x = (*x - 'a' + 13) % 26 + 'a';
+				break;
+			}
+
+			while (is_upper)
+			{
+				*x = (*x - 'A' + 13) % 26 + 'A';
+				break;
+			}
 		}
 		x++;
 	}
