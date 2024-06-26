@@ -8,8 +8,11 @@ char *rot13(char *str)
 	{
 		if (('a' <= *x && *x <= 'm') || ('A' <= *x && *x <= 'M'))
 			*x += 13;
-		else
+		while (('n' <= *x && *x <= 'z') || ('N' <= *x && *x <= 'Z'))
+		{
 			*x -= 13;
+			break;
+		}
 		x++;
 	}
 	return (str);
