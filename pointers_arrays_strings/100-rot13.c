@@ -6,12 +6,10 @@ char *rot13(char *str)
 
 	while (*x)
 	{
-		if (('a' <= *x && *x <= 'm') || ('A' <= *x && *x <= 'M'))
-			*x += 13;
-		while (('n' <= *x && *x <= 'z') || ('N' <= *x && *x <= 'Z'))
+		if (('a' <= *x && *x <= 'z') || ('A' <= *x && *x <= 'Z'))
 		{
-			*x -= 13;
-			break;
+			char base = ('a' <= *x && *x <= 'z') ? 'a' : 'A';
+			*x = (*x - base + 13) % 26 + base;
 		}
 		x++;
 	}
