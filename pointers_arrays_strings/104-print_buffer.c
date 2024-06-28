@@ -25,7 +25,6 @@ void print_buffer(char *b, int size)
 			if (j % 2 == 1)
 				printf(" ");
 		}
-	printf("|");
 	for (j = 0 ; j < 10 ; j++)
 	{
 		if (i + j < size)
@@ -40,6 +39,6 @@ void print_buffer(char *b, int size)
 		else
 			printf(" ");
 	}
-	printf("|\n");
+	printf("\n");
 	}
 }
