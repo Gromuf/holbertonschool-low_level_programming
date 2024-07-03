@@ -8,24 +8,22 @@
  * Return: The integer square root of n,
  * or -1 if n does not have a natural square root.
  */
+int sqrt_rec(int n, int res)
+{
+	if ((res * res) == n)
+		return (res);
+	if (res == n / 2)
+		return (-1);
+	return (sqrt_rec(n, res + 1));
+}
+
 int _sqrt_recursion(int n)
 {
-	static int i = 1;
 	int result;
 
-	if (n == 0)
-		return (0);
-	if (i * i > n)
-	{
-		i = 1;
+	if (n < 0)
 		return (-1);
-	}
-	if (i * i == n)
-	{
-		result = i;
-		i = 1;
-		return (result);
-	}
-	i++;
-	return (_sqrt_recursion(n));
+	if (n == 1)
+		return (1);
+	return (sqrt_rec(n, result));
 }
