@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		
 		if (*endptr != '\0' || num < 0 || num > INT_MAX)
 		{
-			printf("ERROR\n");
+			printf("Error\n");
 			return (1);
 		}
 		result += (int)num;
