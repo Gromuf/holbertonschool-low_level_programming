@@ -6,16 +6,18 @@
  *
  * Return: 1 if n is a prime number, 0 otherwise.
  */
-int is_prime_number(int n)
+int prime_rec(int n, int i)
 {
-	int i;
-
 	if (n <= 1)
 		return (0);
-	for (i = 2 ; i * i <= n ; i++)
-	{
-		if (n % i == 0)
-			return (0);
-	}
-	return (1);
+	if (i * i > n)
+		return (1);
+	if (n % i == 0)
+		return (0);
+	return (prime_rec(n, i + 1));
+}
+
+int is_prime_number(int n)
+{
+	return (prime_rec(n, 2));
 }
