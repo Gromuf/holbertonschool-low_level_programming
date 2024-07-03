@@ -1,6 +1,16 @@
 #include "main.h"
-#include <string.h>
 
+int _strlen(char *s)
+{
+	int res = 0;
+
+	if (*(s + res))
+	{
+		res++;
+		res += _strlen(s + res);
+	}
+	return (res);
+}
 /**
  * palindrome_rec - Recursively checks if a substring is a palindrome.
  * @s: The string to check.
@@ -26,7 +36,7 @@ int palindrome_rec(char *s, int start, int end)
  */
 int is_palindrome(char *s)
 {
-	int length = strlen(s);
+	int length = _strlen(s);
 
 	return (palindrome_rec(s, 0, length - 1));
 }
