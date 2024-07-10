@@ -27,6 +27,8 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 	res = malloc(sizeof(int) * length);
+	if (res == NULL)
+		return (NULL);
 	for (i = min ; i <= max ; i++)
 	{
 		res[j] = i;
