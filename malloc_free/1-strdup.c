@@ -50,10 +50,12 @@ char *_strcpy(char *dest, char *src)
 */
 char *_strdup(char *str)
 {
-	int length = _strlen(str);
-	char *res = (char *)malloc(sizeof(char) * (length + 1));
+	if (str == NULL)
+		return (NULL);
 
-	if (str == NULL || res == NULL)
+	int length = _strlen(str);
+	char *res = malloc(sizeof(char) * (length + 1));
+	if (res == NULL)
 		return (NULL);
 	_strcpy(res, str);
 	return (res);
