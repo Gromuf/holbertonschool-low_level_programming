@@ -33,10 +33,11 @@ char *str_concat(char *s1, char *s2)
 	int length1 = _strlen(s1);
 	int length2 = _strlen(s2);
 	char *res = (char *)malloc(sizeof(char) * (length1 + length2 + 1));
+	char *start;
 
 	if (res == NULL)
 		return (NULL);
-	char *start = res;
+	start = res;
 
 	while (*s1 != '\0')
 	{
