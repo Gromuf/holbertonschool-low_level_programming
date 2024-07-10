@@ -38,18 +38,23 @@ char *str_concat(char *s1, char *s2)
 	if (res == NULL)
 		return (NULL);
 	start = res;
-
-	while (*s1 != '\0')
+	if (s1 != NULL)
 	{
-		*res = *s1;
-		res++;
-		s1++;
+		while (*s1 != '\0')
+		{
+			*res = *s1;
+			res++;
+			s1++;
+		}
 	}
-	while (*s2 != '\0')
+	if (s2 != NULL)
 	{
-		*res = *s2;
-		res++;
-		s2++;
+		while (*s2 != '\0')
+		{
+			*res = *s2;
+			res++;
+			s2++;
+		}
 	}
 	*res = '\0';
 	return (start);
