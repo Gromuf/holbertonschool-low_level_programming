@@ -2,11 +2,6 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void printChar(va_list arg);
-void printInt(va_list arg);
-void printFloat(va_list arg);
-void printString(va_list arg);
-
 /**
  * printChar - prints a char
  * @arg: va_list containing the char to print
