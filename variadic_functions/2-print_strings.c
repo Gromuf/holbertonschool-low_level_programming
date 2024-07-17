@@ -2,6 +2,17 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * print_strings - Prints strings followed by a new line.
+ * @separator: The string to be printed between strings.
+ * @n: The number of strings passed to the function.
+ *
+ * This function takes a variable number of string arguments and prints them.
+ * If a separator is provided, it is printed between the strings.
+ * If the separator is NULL, the strings are printed without any separator.
+ * If one of the strings is NULL, "(nil)" is printed instead.
+ * A new line is printed at the end of the function.
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list args;
