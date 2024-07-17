@@ -8,4 +8,11 @@ int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 
 void print_strings(const char *separator, const unsigned int n, ...);
+
+typedef struct printall
+{
+	char *letter;
+	void (*func)(va_list arg);
+} printall_t;
+
 #endif
