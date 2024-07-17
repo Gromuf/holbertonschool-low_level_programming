@@ -78,14 +78,18 @@ void print_all(const char *const format, ...)
 		{"s", printString}};
 
 	va_start(args, format);
-	while (format && (*format + i))
+	while (format && (*(format + i)))
 	{
 		j = 0;
 
 		while (j < 4 && (*(format + i) != *(prt[j].letter)))
 			j++;
 		if (j < 4)
+		{
+			if (j > 0)
+				printf(", ");
 			prt[j].func(args);
+		}
 		i++;
 	}
 	printf("\n");
