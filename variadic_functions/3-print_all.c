@@ -7,6 +7,10 @@ void printInt(va_list arg);
 void printFloat(va_list arg);
 void printString(va_list arg);
 
+/**
+ * printChar - prints a char
+ * @arg: va_list containing the char to print
+ */
 void printChar(va_list arg)
 {
 	char c;
@@ -15,6 +19,10 @@ void printChar(va_list arg)
 	printf("%c", c);
 }
 
+/**
+ * printInt - prints an int
+ * @arg: va_list containing the int to print
+ */
 void printInt(va_list arg)
 {
 	int i;
@@ -23,6 +31,10 @@ void printInt(va_list arg)
 	printf("%d", i);
 }
 
+/**
+ * printFloat - prints a float
+ * @arg: va_list containing the float to print
+ */
 void printFloat(va_list arg)
 {
 	float f;
@@ -31,6 +43,10 @@ void printFloat(va_list arg)
 	printf("%f", f);
 }
 
+/**
+ * printString - prints a string
+ * @arg: va_list containing the string to print
+ */
 void printString(va_list arg)
 {
 	char *s;
@@ -44,6 +60,11 @@ void printString(va_list arg)
 	printf("%s", s);
 }
 
+/**
+ * print_all - prints anything, based on format specifier
+ * @format: a list of types of arguments passed to the function
+ *          c: char, i: int, f: float, s: string
+ */
 void print_all(const char *const format, ...)
 {
 	va_list args;
