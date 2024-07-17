@@ -86,7 +86,7 @@ void print_all(const char *const format, ...)
 			j++;
 		if (j < 4)
 		{
-			// if (j > 0)
+			/** if (j > 0) */
 			printf(", ");
 			prt[j].func(args);
 		}
