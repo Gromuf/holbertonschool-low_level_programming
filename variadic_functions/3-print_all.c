@@ -67,4 +67,6 @@ void print_all(const char *const format, ...)
 			prt[j].func(args);
 		i++;
 	}
+	printf("\n");
+	va_end(args);
 }
