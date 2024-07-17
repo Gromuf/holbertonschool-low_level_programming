@@ -70,6 +70,7 @@ void print_all(const char *const format, ...)
 	va_list args;
 	int i = 0;
 	int j = 0;
+	char *comma = "";
 
 	printall_t prt[] = {
 		{"c", printChar},
@@ -86,9 +87,9 @@ void print_all(const char *const format, ...)
 			j++;
 		if (j < 4)
 		{
-			/** if (j > 0) */
-			printf(", ");
+			printf("%s", comma);
 			prt[j].func(args);
+			comma = ", ";
 		}
 		i++;
 	}
