@@ -45,6 +45,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	free(buffer);
 	close(file_desc);
-	return (n_written);	
+	return (n_written);
 }
 
