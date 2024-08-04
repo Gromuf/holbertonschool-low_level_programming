@@ -11,7 +11,7 @@
 void handle_error(const char *message, const char *filename, int exit_code)
 {
 	dprintf(STDERR_FILENO, message, filename);
-	exite(exit_code);
+	exit(exit_code);
 }
 
 /**
